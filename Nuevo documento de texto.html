@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Gastos</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 400px; margin: auto; }
+        .gasto { margin: 10px 0; }
+        .eliminar {
+            color: red;
+            cursor: pointer;
+            margin-left: 10px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Gastos</h1>
+        <div class="gasto">
+            <input type="text" id="categoria" placeholder="Categoría" />
+            <input type="number" id="monto" placeholder="Monto" min="0" />
+            <button id="agregar">Agregar Gasto</button>
+        </div>
+        <h2>Total General: <span id="total-general">0</span> €</h2>
+        <ul id="lista-gastos"></ul>
+        <h3>Totales por Categoría:</h3>
+        <ul id="totales-categorias"></ul>
+        <button id="borrar-todo">Borrar Todo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
